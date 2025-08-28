@@ -1,16 +1,49 @@
-# cipher_flutter
+# Substitution Cipher & Language Model
 
-A new Flutter project.
+Proyek ini membahas **dekripsi substitution cipher** menggunakan konsep **probabilistic modelling** dan **language model**.  
+Tujuannya adalah memahami bagaimana model probabilistik dapat membantu memecahkan pesan terenkripsi.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 1. Substitution Cipher
 
-A few resources to get you started if this is your first Flutter project:
+- Setiap huruf diganti dengan huruf lain melalui **pemetaan satu-ke-satu**.
+- **Pengirim**: mengenkripsi pesan (plaintext) → ciphertext.
+- **Penerima**: mendekripsi ciphertext dengan pemetaan terbalik.
+- **Mata-mata**: tidak tahu pemetaan, sehingga perlu metode probabilistik untuk menebak.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**Contoh:**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Plaintext: `SAYA`
+- Ciphertext (mapping tertentu): `YWYR`
+- Setelah didekripsi kembali: `SAYA`
+
+---
+
+## 2. Language Model
+
+Model bahasa memberi:
+
+- **Probabilitas tinggi** pada kata/kalimat nyata.
+- **Probabilitas rendah** pada kata/kalimat tidak masuk akal.
+
+**Contoh:**
+
+- `SAYA` → probabilitas tinggi
+- `YWYR` → probabilitas rendah
+
+---
+
+## 3. N-grams & Markov Model
+
+- **N-gram**: urutan huruf/token.
+
+  - Unigram = 1 huruf
+  - Bigram = 2 huruf
+  - Trigram = 3 huruf
+
+- **Asumsi Markov**: huruf sekarang hanya bergantung pada huruf sebelumnya.
+  - Contoh kata `CAT` → bigram: `CA`, `AT`
+  - Probabilitas:
+    - p(A|C) = peluang A setelah C
+    - p(T|A) = peluang T setelah A
