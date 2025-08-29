@@ -47,3 +47,21 @@ Model bahasa memberi:
   - Probabilitas:
     - p(A|C) = peluang A setelah C
     - p(T|A) = peluang T setelah A
+
+## Dataset & API
+
+- **Dataset**: [Link](https://raw.githubusercontent.com/fahmi54321/cipher_api/refs/heads/main/moby_dick.txt)
+- **API**: [Link](https://github.com/fahmi54321/cipher_api.git)
+
+---
+
+## Teori
+
+- **Deskripsi Cipher**
+- **Part 1**: [Link](https://medium.com/@fahmiabdulaziz44/dekripsi-cipher-part-1-9e5e516dd6b8)
+- **Part 2**: [Link](https://medium.com/@fahmiabdulaziz44/dekripsi-cipher-part-2-9749162e2a8d)
+- **Part 3**: [Link](https://medium.com/@fahmiabdulaziz44/dekripsi-cipher-part-3-c5923d29d6d5)
+- **Part 4**: [Link](https://medium.com/@fahmiabdulaziz44/dekripsi-cipher-part-4-a78648fdcd8a)
+- **Algoritma Genetika**:
+- **Part 1**: [Link](https://medium.com/@fahmiabdulaziz44/algoritma-genetika-part-1-0bf3c56a8fc8)
+- **Part 2**: [Link](https://medium.com/@fahmiabdulaziz44/algoritma-genetika-part-2-34fe9cbfcc15)
